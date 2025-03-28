@@ -1,1 +1,3 @@
-type MyReadonly2<T, K> = any
+type MyReadonly2<T extends Record<string, any>, K extends keyof T> = {
+      
+}
