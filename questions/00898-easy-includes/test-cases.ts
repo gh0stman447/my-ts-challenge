@@ -1,4 +1,6 @@
 import type { Equal, Expect } from '@type-challenges/utils'
+import { Includes } from './template'
+
 
 type cases = [
   Expect<Equal<Includes<['Kars', 'Esidisi', 'Wamuu', 'Santana'], 'Kars'>, true>>,
