@@ -25,5 +25,3 @@ type X1 = {
       }
     }
   }
-
-type Kek = DeepReadonly<X1>
