@@ -1,14 +1,14 @@
 
 // Решение 1
 
-// type StartsWith<T extends string, U extends string> = 
-//     U extends `${infer First}${infer Rest}` 
-//     ? T extends `${infer _First}${infer _Rest}`
-//         ? First extends _First
-//             ? StartsWith<_Rest, Rest>
-//             : false
-//         : false
-//     : true
+type StartsWith<T extends string, U extends string> = 
+    U extends `${infer First}${infer Rest}` 
+    ? T extends `${infer _First}${infer _Rest}`
+        ? First extends _First
+            ? StartsWith<_Rest, Rest>
+            : false
+        : false
+    : true
 
 
 // Решение 2

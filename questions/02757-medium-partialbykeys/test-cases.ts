@@ -6,17 +6,19 @@ interface User {
   address: string
 }
 
-interface UserPartialName {
-  name?: string
-  age: number
-  address: string
-}
 
 interface UserPartialNameAndAge {
   name?: string
   age?: number
   address: string
 }
+
+interface UserPartialName {
+  name?: string
+  age: number
+  address: string
+}
+
 
 type cases = [
   Expect<Equal<PartialByKeys<User, 'name'>, UserPartialName>>,
